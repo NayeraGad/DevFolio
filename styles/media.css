@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+    .home-title {
+        font-size: 72px;
+    }
+
+    .dynamic-txt::before {
+        font-size: 40px;
+    }
+
+    .carousel-item p {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-bg {
+        background-attachment: fixed;
+    }
+
+    .navbar-nav {
+        background-color: transparent;
+    }
+
+    .nav-item {
+        padding: 10px 0 10px 30px;
+    }
+
+    .navbar-nav .nav-link {
+        position: relative;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        color: var(--white-clr);
+    }
+
+    .navbar-nav .nav-link::after,
+    .navbar-nav .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 8px;
+        width: 60%;
+        height: 2px;
+        background-color: var(--white-clr);
+        transition: all 0.3s ease-in-out;
+        transform-origin: left;
+    }
+
+    .navbar-nav .nav-link:not(.active):after {
+        transform: scaleX(0);
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+
+    .drop-list,
+    .deep-drop-list {
+        display: none;
+    }
+
+    .drop-down-link i {
+        padding-left: 5px;
+    }
+
+    .drop-down-link:hover .drop-list {
+        position: absolute;
+        top: 100%;
+        left: 40px;
+        display: block;
+        width: 100%;
+    }
+
+    .drop-down-link:hover .drop-list a {
+        display: flex;
+        align-items: center;
+        color: var(--header-clr);
+        transition: all 0.3s ease;
+    }
+
+    .drop-down-link:hover .drop-list a:hover {
+        color: var(--main-clr);
+    }
+
+    .deep-link:hover .deep-drop-list {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: var(--white-clr);
+    }
+
+    .carousel-item p {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item p {
+        padding: 0 13rem;
+    }
+}
